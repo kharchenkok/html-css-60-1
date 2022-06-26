@@ -1,0 +1,36 @@
+:root {
+    --grey-text-cl: #999999;
+    --back-text-cl:#323232;
+    --white-text-cl:#FFFFFF;
+}
+body {
+    font-size: 16px;
+    line-height: 1.56;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--grey-text-cl);
+}
+.link {
+    text-decoration: none;
+    color: currentColor;
+}
+.list{
+    list-style: none;
+}
+
+.section-title{
+    font-size: 36px;
+    line-height: 1.74;
+}
+
+
+
+.text-black{
+    color: var(--back-text-cl);
+}
+.text-white{
+    color: var(--white-text-cl);
+}
+
+.work{
+    background: linear-gradient(90deg, #504DC2 20.44%, #5F12D0 80.91%), #C4C4C4;
+}
