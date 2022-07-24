@@ -20,7 +20,7 @@
     />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
-  <body>
+  <body data-page>
     <header class="header">
       <div class="conteiner header-conteiner">
         <nav class="nav">
@@ -60,7 +60,9 @@
           <h1 class="hero-title">
             Ми створюємо легкі рішення важких задач і проблем
           </h1>
-          <button type="button" class="btn">Замовити проект</button>
+          <button type="button" class="btn" data-modal-open>
+            Замовити проект
+          </button>
         </div>
       </section>
       <section class="section about">
@@ -166,7 +168,7 @@
               />
               <div class="work-content">
                 <h3 class="item-title work-item-title">
-                  01. Дослідження і упаковка
+                  Дослідження і упаковка
                 </h3>
                 <p class="work-text">
                   Lorem Ipsum - це текст-"риба", що часто використовується в
@@ -186,7 +188,7 @@
               />
               <div class="work-content">
                 <h3 class="item-title work-item-title">
-                  01. Дослідження і упаковка
+                  Дослідження і упаковка
                 </h3>
                 <p class="work-text">
                   Lorem Ipsum - це текст-"риба", що часто використовується в
@@ -206,7 +208,7 @@
               />
               <div class="work-content">
                 <h3 class="item-title work-item-title">
-                  01. Дослідження і упаковка
+                  Дослідження і упаковка
                 </h3>
                 <p class="work-text">
                   Lorem Ipsum - це текст-"риба", що часто використовується в
@@ -229,31 +231,116 @@
           </p>
           <ul class="list project-list card-set">
             <li class="card-item">
-              <a class="link" href="" target="_blank" rel="noopener noreferrer"
-                ><img
-                  src="./images/project.jpg"
-                  alt="Фото проекту"
-                  width="255"
-                  height="255"
-              /></a>
+              <a
+                class="project-link link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div class="project-wrapper">
+                  <img
+                    src="./images/project.jpg"
+                    alt="Фото проекту"
+                    width="255"
+                    height="255"
+                  />
+                  <div class="overlay">
+                    <p>
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Aliquid voluptate est necessitatibus? Ex architecto nulla
+                      tempora explicabo rerum sint ullam!
+                    </p>
+                  </div>
+                </div>
+                <div class="project-content">
+                  <h2>Title</h2>
+                  <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+              </a>
             </li>
             <li class="card-item">
-              <a class="link" href="" target="_blank" rel="noopener noreferrer"
-                ><img
-                  src="./images/project.jpg"
-                  alt="Фото проекту"
-                  width="255"
-                  height="255"
-              /></a>
+              <a
+                class="project-link link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div class="project-wrapper">
+                  <img
+                    src="./images/project.jpg"
+                    alt="Фото проекту"
+                    width="255"
+                    height="255"
+                  />
+                  <div class="overlay">
+                    <p>
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Aliquid voluptate est necessitatibus? Ex architecto nulla
+                      tempora explicabo rerum sint ullam!
+                    </p>
+                  </div>
+                </div>
+                <div class="project-content">
+                  <h2>Title</h2>
+                  <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+              </a>
             </li>
             <li class="card-item">
-              <a class="link" href="" target="_blank" rel="noopener noreferrer"
-                ><img
-                  src="./images/project.jpg"
-                  alt="Фото проекту"
-                  width="255"
-                  height="255"
-              /></a>
+              <a
+                class="project-link link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div class="project-wrapper">
+                  <img
+                    src="./images/project.jpg"
+                    alt="Фото проекту"
+                    width="255"
+                    height="255"
+                  />
+                  <div class="overlay">
+                    <p>
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Aliquid voluptate est necessitatibus? Ex architecto nulla
+                      tempora explicabo rerum sint ullam!
+                    </p>
+                  </div>
+                </div>
+                <div class="project-content">
+                  <h2>Title</h2>
+                  <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+              </a>
+            </li>
+            <li class="card-item">
+              <a
+                class="project-link link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div class="project-wrapper">
+                  <img
+                    src="./images/project.jpg"
+                    alt="Фото проекту"
+                    width="255"
+                    height="255"
+                  />
+                  <div class="overlay">
+                    <p>
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Aliquid voluptate est necessitatibus? Ex architecto nulla
+                      tempora explicabo rerum sint ullam!
+                    </p>
+                  </div>
+                </div>
+                <div class="project-content">
+                  <h2>Title</h2>
+                  <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+              </a>
             </li>
           </ul>
           <a class="link" href="">Всі проекти</a>
@@ -341,5 +428,15 @@
         <p>&#169; 2019. Всі права захищені</p>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close-btn" data-modal-close>
+          <svg class="modal-close-icon" width="18" height="18">
+            <use href="./images/sprite.svg#close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
