@@ -1,0 +1,27 @@
+.contact {
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-left: auto;
+  }
+
+ &__link {
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    gap: 10px;
+    position: relative;
+    transition: color $transition;
+		&:hover,
+		&:focus {
+			color: $accent-cl;
+		}
+  }
+
+
+  &__icon {
+    fill: currentColor;
+  }
+}

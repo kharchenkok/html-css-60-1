@@ -1,0 +1,43 @@
+body {
+  @include fonts;
+  font-family: "Montserrat", sans-serworkif;
+  color: $grey-text-cl;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.link {
+  text-decoration: none;
+  color: currentColor;
+}
+
+.list {
+  list-style: none;
+}
+
+.accent-link {
+  @include fonts(20px, null, 2);
+
+  color: $accent-cl;
+}
+
+.accent-link > span {
+  border-bottom: 1px solid $accent-cl;
+}
+
+.item-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: calc(22 / 18);
+  color: $back-text-cl;
+}
+
+.text-black {
+  color: $back-text-cl;
+}
+
+.text-white {
+  color: $white-text-cl;
+}

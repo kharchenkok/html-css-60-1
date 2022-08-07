@@ -1,0 +1,33 @@
+.about {
+  &__title {
+    margin-bottom: 32px;
+    max-width: 740px;
+    @include block-center;
+    text-align: center;
+  }
+
+  &__list {
+    @include card-set(50px);
+    margin-bottom: 55px;
+  }
+  &__item {
+    @include card-item(3, 50px);
+  }
+  &__text {
+    margin-bottom: 70px;
+    max-width: 730px;
+    @include block-center;
+    text-align: center;
+  }
+
+  &__item-title {
+    margin-bottom: 12px;
+  }
+
+  &__btn {
+    display: flex;
+    justify-content: center;
+    @include block-center;
+    max-width: 200px;
+  }
+}

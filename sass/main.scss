@@ -1,0 +1,22 @@
+@import "./utils/variables";
+@import "./utils/hidden";
+@import "./utils/reset";
+@import "./utils/mixins";
+
+@import "./base/common";
+@import "./base/container";
+@import "./base/card-set";
+@import "./base/section";
+
+@import "./components/backdrop";
+@import "./components/modal";
+@import "./components/nav";
+@import "./components/contact";
+@import "./components/btn";
+
+@import "./layout/about";
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/standart";
+@import "./layout/work";
+@import "./layout/project";
