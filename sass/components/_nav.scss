@@ -1,12 +1,19 @@
 .nav {
   display: flex;
   align-items: center;
+
+
 }
 
 .nav-list {
   display: flex;
   align-items: center;
   gap: 30px;
+    @include mq(mob-only) {
+        flex-direction: column;
+        gap: 20px;
+        font-size: 40px;
+      }
 }
 
 .nav-link {

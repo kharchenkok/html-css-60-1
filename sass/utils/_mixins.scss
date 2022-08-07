@@ -17,3 +17,38 @@
   line-height: $lh;
   letter-spacing: $ls;
 }
+@mixin mq($range) {
+  $mob: 480px;
+  $tab: 768px;
+  $desk: 1200px;
+  @if $range==mob {
+    @media screen and (min-width: $mob) {
+      @content;
+    }
+  }
+  @if $range==mob-only {
+    @media (max-width:#{$tab - 0.02}) {
+      @content;
+    }
+  }
+  @if $range==tab {
+    @media screen and (min-width: $tab) {
+      @content;
+    }
+  }
+  @if $range==tab-only {
+    @media (min-width:$tab) and (max-width:#{$desk - 0.02}) {
+      @content;
+    }
+  }
+  @if $range==desk {
+    @media screen and (min-width: $desk) {
+      @content;
+    }
+  }
+  @if $range==noDesk {
+    @media (max-width:#{$desk - 0.02}) {
+      @content;
+    }
+  }
+}

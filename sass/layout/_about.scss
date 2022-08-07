@@ -1,17 +1,29 @@
 .about {
+
+  @include mq(noDesk){
+    display: none;
+  }
   &__title {
     margin-bottom: 32px;
     max-width: 740px;
     @include block-center;
     text-align: center;
+    @include mq(tab-only){
+      color: red;
+
+    }
   }
 
   &__list {
-    @include card-set(50px);
+    @include card-set;
     margin-bottom: 55px;
   }
   &__item {
-    @include card-item(3, 50px);
+    @include card-item;
+    @include mq(tab){
+      @include card-item(2);
+
+    }
   }
   &__text {
     margin-bottom: 70px;

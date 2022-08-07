@@ -7,9 +7,12 @@
   font-size: 14px;
   border-bottom: 1px solid rgba(161, 161, 161, 0.5);
 
-  .contact__list {
-    margin-left: auto;
+  .nav{
+    @include mq(mob-only){
+      display: none;
+    }
   }
+
 }
 
 .header .logo {
